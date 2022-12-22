@@ -2,7 +2,7 @@ setInterval(showTime, 1000);
 	function showTime() {
 	const daynames = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 	let time = new Date();
-	let day = dayname[time.getDay()];
+	let day = daynames[time.getDay()];
 	
 	let hour = time.getHours();
         let min = time.getMinutes();
