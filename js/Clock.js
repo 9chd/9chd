@@ -20,7 +20,7 @@ setInterval(showTime, 1000);
         min = min < 10 ? "0" + min : min;
         sec = sec < 10 ? "0" + sec : sec;
  
-	thisDay = getDayInWords(day);
+
 		
         let currentTime = day + "   " + hour + ":"
                 + min + ":" + sec + am_pm;
