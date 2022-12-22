@@ -1,9 +1,10 @@
 setInterval(showTime, 1000);
 	function showTime() {
 	const daynames = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+	const monthnames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 	let time = new Date();
 	let day = daynames[time.getDay()];
-	
+	let month = monthnames[time.getMonth()];
 	let hour = time.getHours();
         let min = time.getMinutes();
         let sec = time.getSeconds();
@@ -24,7 +25,7 @@ setInterval(showTime, 1000);
  
 
 		
-        let currentTime = day + "   " + hour + ":"
+        let currentTime = day + "   " + month + "  " + hour + ":"
                 + min + ":" + sec + am_pm;
  
         document.getElementById("clock")
