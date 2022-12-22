@@ -22,7 +22,7 @@ setInterval(showTime, 1000);
  
 	thisDay = getDayInWords(day);
 		
-        let currentTime = thisDay + ":" + day + "   " + hour + ":"
+        let currentTime = day + "   " + hour + ":"
                 + min + ":" + sec + am_pm;
  
         document.getElementById("clock")
