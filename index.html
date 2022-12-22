@@ -143,6 +143,7 @@ footer {
         setInterval(showTime, 1000);
         function showTime() {
             let time = new Date();
+		let day = time.getDay();
             let hour = time.getHours();
             let min = time.getMinutes();
             let sec = time.getSeconds();
@@ -161,7 +162,7 @@ footer {
             min = min < 10 ? "0" + min : min;
             sec = sec < 10 ? "0" + sec : sec;
  
-            let currentTime = hour + ":"
+            let currentTime = day + "   " + hour + ":"
                 + min + ":" + sec + am_pm;
  
             document.getElementById("clock")
