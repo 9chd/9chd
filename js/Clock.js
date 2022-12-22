@@ -52,7 +52,10 @@ setInterval(showTime, 1000);
                 .innerHTML = currentTime;
     }
  
-    showTime();
+
 
 getDay(new Date().getDay())
 	day = "Saturday"
+
+
+showTime();
