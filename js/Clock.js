@@ -54,8 +54,8 @@ setInterval(showTime, 1000);
  
 
 
-getDay(new Date().getDay())
-	day = "Saturday"
+getDay(new Date().getDay());
+	day = "Saturday";
 
 
 showTime();
