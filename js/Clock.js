@@ -24,7 +24,7 @@ setInterval(showTime, 1000);
 			  case 6:
 			    day = "Saturday";
 		}
-        getDay(new Date().getDay())
+        getDay(new Date().getDay());
 	let hour = time.getHours();
         let min = time.getMinutes();
         let sec = time.getSeconds();
