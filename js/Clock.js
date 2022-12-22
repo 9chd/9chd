@@ -4,6 +4,8 @@ setInterval(showTime, 1000);
 	const monthnames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 	let time = new Date();
 	let day = daynames[time.getDay()];
+	let date = time.getDate();
+	let year = time.getFullYear();
 	let month = monthnames[time.getMonth()];
 	let hour = time.getHours();
         let min = time.getMinutes();
@@ -25,7 +27,7 @@ setInterval(showTime, 1000);
  
 
 		
-        let currentTime = day + "   " + month + "  " + hour + ":"
+        let currentTime = day + "  " + month + " " + date + ", " + year + "  " + hour + ":"
                 + min + ":" + sec + am_pm;
  
         document.getElementById("clock")
