@@ -20,7 +20,9 @@ setInterval(showTime, 1000);
         min = min < 10 ? "0" + min : min;
         sec = sec < 10 ? "0" + sec : sec;
  
-        let currentTime = day + "   " + hour + ":"
+	thisDay = getDayInWords(day);
+		
+        let currentTime = thisDay + ":" + day + "   " + hour + ":"
                 + min + ":" + sec + am_pm;
  
         document.getElementById("clock")
@@ -28,3 +30,29 @@ setInterval(showTime, 1000);
     }
  
     showTime();
+
+getDayInWords = function(value) {
+	switch(value) {
+			case 0:
+				return "Sunday";
+				break;
+			case 1:
+				return "Monday";
+				break;
+			case 2:
+				return "Tuesday";
+				break;
+			case 3:
+				return "Wednesday";
+				break;
+			case 4:
+				return "Thursday";
+				break;
+			case 5:
+				return "Friday";
+				break;
+			case 6:
+				return "Saturday";
+				break;
+	}	 	
+}
