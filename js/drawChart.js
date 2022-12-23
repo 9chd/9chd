@@ -13,7 +13,7 @@ var data = google.visualization.arrayToDataTable([
 // Set Options
 var options = {
   title: 'House Prices vs. Size',
-  hAxis: {title: 'Square Meters'},
+  hAxis: {title: 'Area in square meters'},
   vAxis: {title: 'Price in Millions'},
   legend: 'none'
 };
