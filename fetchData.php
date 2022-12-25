@@ -9,7 +9,7 @@
       die('Could not connect: ' . mysql_error());
    }
    
-   $sql = 'SELECT item_id, temperature, humidity FROM studyemployee';
+   $sql = 'SELECT item_id, temperature, humidity FROM study';
    mysql_select_db('test_db');
    $retval = mysql_query( $sql, $conn );
    
