@@ -11,7 +11,7 @@
    }
 
    $sql = 'SELECT item_id, temperature, humidity FROM study';
-
+   mysql_select_db($dbname);
    $retval = mysql_query( $sql, $conn );  
 
    echo "$retval successfully\n";
