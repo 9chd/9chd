@@ -9,20 +9,7 @@
       die('Could not connect: ' . mysql_error());
    }
    
-   $sql = 'SELECT item_id, temperature, humidity FROM study';
-   mysql_select_db('9chd_home');
-   $retval = mysql_query( $sql, $conn );
    
-   if(! $retval ) {
-      die('Could not get data: ' . mysql_error());
-   }
-   
-   while($row = mysql_fetch_array($retval, MYSQL_ASSOC)) {
-      echo "ID :{$row['item_id']}  <br> ".
-         "Temperature : {$row['temperature']} <br> ".
-         "Humidity : {$row['humidity']} <br> ".
-         "--------------------------------<br>";
-   }
    
    echo "Fetched data successfully\n";
    
