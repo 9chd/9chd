@@ -1,9 +1,10 @@
 <?php
-   $dbhost = 'localhost:3036';
-   $dbuser = 'root';
-   $dbpass = 'rootpassword';
+   $servername = 'localhost';
+   $username = 'steven';
+   $password = 'Illawarra(555)';
+   $dbname = "9chd_home";
 
-   $conn = mysql_connect($dbhost, $dbuser, $dbpass);
+   $conn = new mysqli($servername, $username, $password, $dbname);;
    
    echo "Fetched data successfully\n";
    
