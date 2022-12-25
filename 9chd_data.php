@@ -15,7 +15,7 @@
 $servername = "localhost";
 
 // REPLACE with your Database name
-$dbname = "9chd_home;
+$dbname = "9chd_home";
 // REPLACE with Database user
 $username = "steven";
 // REPLACE with Database user password
@@ -28,7 +28,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "SELECT id, sensor, location, value1, value2, value3, reading_time FROM SensorData ORDER BY id DESC";
+$sql = "SELECT id, datestamp, temperature, humidity, reading_time FROM study ORDER BY item_id";
 
 echo '<table cellspacing="5" cellpadding="5">
       <tr> 
@@ -40,7 +40,7 @@ echo '<table cellspacing="5" cellpadding="5">
  
 if ($result = $conn->query($sql)) {
     while ($row = $result->fetch_assoc()) {
-        $row_id = $row["id"];
+        $row_id = $row["item_id"];
         $row_datestamp = $row["datestamp"];
         $row_temperature = $row["temperature"];
         $row_humidity = $row["humidity"];
@@ -53,7 +53,7 @@ if ($result = $conn->query($sql)) {
       
         echo '<tr> 
                 <td>' . $row_id . '</td> 
-                <td>' . $row_datestamp . '</td>
+                <td>' . $row_datestamp . '</td> 
                 <td>' . $row_temperature . '</td> 
                 <td>' . $row_humidity . '</td> 
                 <td>' . $row_reading_time . '</td> 
