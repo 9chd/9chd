@@ -10,7 +10,7 @@
       die('Could not connect: ' . mysql_error());
    }
 
-   $sql = 'SELECT item_id, temperature, humidity FROM study';
+   $sql = 'SELECT item_id, datestamp, temperature, humidity FROM study';
 
 
    $result = $conn->query($sql);
@@ -20,7 +20,7 @@
          // output data of each row
          while($row = $result->fetch_assoc()) 
             {
-               echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
+               echo "Item ID: " . $row["item_id"]. " - Datestamp: " . $row["datestamp"]. " - Temperature: " . $row["temperature"]. " " . $row["humidity"]. "<br>";
             }
       } 
    else 
