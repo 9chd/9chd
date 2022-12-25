@@ -12,7 +12,9 @@
 
    $sql = 'SELECT item_id, temperature, humidity FROM study';
 
-   echo "Selected successfully\n";
+   $retval = mysql_query( $sql, $conn );  
+
+   echo "$retval successfully\n";
    
  
 ?>
