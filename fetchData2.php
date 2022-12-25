@@ -17,7 +17,7 @@
 
    // Works to here
 
-   echo "$retval successfully\n";
+   echo "Result successfully\n";
    
  
 ?>
