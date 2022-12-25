@@ -28,14 +28,14 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "SELECT id, datestamp, temperature, humidity, reading_time FROM study ORDER BY item_id";
+$sql = "SELECT id, datestamp, temperature, humidity FROM study ORDER BY item_id";
 
 echo '<table cellspacing="5" cellpadding="5">
       <tr> 
         <td>ID</td> 
-        <td>datestamp</td> 
-        <td>temperature</td> 
-        <td>humidity</td> 
+        <td>Datestamp</td> 
+        <td>Temperature</td> 
+        <td>Humidity</td> 
       </tr>';
  
 if ($result = $conn->query($sql)) {
@@ -44,19 +44,13 @@ if ($result = $conn->query($sql)) {
         $row_datestamp = $row["datestamp"];
         $row_temperature = $row["temperature"];
         $row_humidity = $row["humidity"];
-        $row_reading_time = $row["reading_time"];
-        // Uncomment to set timezone to - 1 hour (you can change 1 to any number)
-        //$row_reading_time = date("Y-m-d H:i:s", strtotime("$row_reading_time - 1 hours"));
-      
-        // Uncomment to set timezone to + 4 hours (you can change 4 to any number)
-        //$row_reading_time = date("Y-m-d H:i:s", strtotime("$row_reading_time + 4 hours"));
+
       
         echo '<tr> 
                 <td>' . $row_id . '</td> 
                 <td>' . $row_datestamp . '</td> 
                 <td>' . $row_temperature . '</td> 
                 <td>' . $row_humidity . '</td> 
-                <td>' . $row_reading_time . '</td> 
               </tr>';
     }
     $result->free();
