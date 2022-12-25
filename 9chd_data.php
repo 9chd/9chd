@@ -28,7 +28,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "SELECT id, datestamp, temperature, humidity FROM study ORDER BY item_id";
+$sql = "SELECT item_id, datestamp, temperature, humidity FROM study ORDER BY item_id";
 
 echo '<table cellspacing="5" cellpadding="5">
       <tr> 
