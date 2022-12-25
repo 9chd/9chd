@@ -10,7 +10,7 @@
    }
    
    $sql = 'SELECT item_id, temperature, humidity FROM study';
-   mysql_select_db('test_db');
+   mysql_select_db('9chd_home');
    $retval = mysql_query( $sql, $conn );
    
    if(! $retval ) {
