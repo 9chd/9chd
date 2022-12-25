@@ -20,7 +20,7 @@
          // output data of each row
          while($row = $result->fetch_assoc()) 
             {
-               echo "Item ID: " . $row["item_id"]. " - Datestamp: " . $row["datestamp"]. " - Temperature: " . $row["temperature"]. "Humidity: " . $row["humidity"]. "<br>";
+               echo "Item ID: " . $row["item_id"]. " - Datestamp: " . $row["datestamp"]. " - Temperature: " . $row["temperature"]. " - Humidity: " . $row["humidity"]. "<br>";
             }
       } 
    else 
