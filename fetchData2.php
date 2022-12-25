@@ -10,7 +10,7 @@
       die('Could not connect: ' . mysql_error());
    }
    
-   echo "Fetched data successfully\n";
+   echo "Connected successfully\n";
    
  
 ?>
