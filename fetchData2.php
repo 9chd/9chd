@@ -9,7 +9,9 @@
    if(! $conn ) {
       die('Could not connect: ' . mysql_error());
    }
-   
+
+   $sql = 'SELECT item_id, temperature, humidity FROM study';
+
    echo "Connected successfully\n";
    
  
