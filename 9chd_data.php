@@ -30,7 +30,7 @@ if ($conn->connect_error) {
 
 $sql = "SELECT id, sensor, location, value1, value2, value3, reading_time FROM SensorData ORDER BY id DESC";
 
-echo '<table cellspacing="5" cellpadding="5">
+echo '<table cellspacing="10" cellpadding="5">
       <tr> 
         <td>ID</td> 
         <td>datestamp</td> 
