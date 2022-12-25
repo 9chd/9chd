@@ -31,8 +31,6 @@
    $conn->close();
 
    // Works to here
-
-   echo "Result successfully\n";
    
  
 ?>
