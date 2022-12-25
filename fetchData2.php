@@ -12,7 +12,7 @@
 
    $sql = 'SELECT item_id, temperature, humidity FROM study';
 
-   echo "Connected successfully\n";
+   echo "Selected successfully\n";
    
  
 ?>
