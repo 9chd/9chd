@@ -1,3 +1,9 @@
-<?php
-echo "<p>Copyright &copy; 1999-" . date("Y") . " W3Schools.com</p>";
+<!DOCTYPE html>
+<?php>
+  <head>
+    <title>PHP</title>
+  </head>
+  <body>
+    <h1>My Header</h1>
+  </body>
 ?>
