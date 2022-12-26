@@ -35,5 +35,6 @@
 
    // Works to here
    
+readfile('chart.html')
  
 ?>
