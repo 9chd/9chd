@@ -1,5 +1,5 @@
 <!DOCTYPE php>
 <?php
-  readfile('index.html');
+  readfile('header.html');
   include('fetchData2.php');
 ?>
