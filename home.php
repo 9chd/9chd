@@ -11,5 +11,7 @@
 
 	include('fetchData2.php');
 
+	readfile('chart.html');
+
   	
 ?>
