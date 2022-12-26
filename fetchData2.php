@@ -18,7 +18,8 @@
    if ($result->num_rows > 0) 
       {
          // output data of each row
-         echo "Datestamp:      Temperature:     Humidity:";
+         echo "Datestamp:           Temperature:          Humidity:";
+         echo "<br>";
          while($row = $result->fetch_assoc()) 
             {
                echo "Datestamp: " . $row["datestamp"]. " - Temperature: " . $row["temperature"]. " - Humidity: " . $row["humidity"]. "<br>";
