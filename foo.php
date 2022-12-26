@@ -7,6 +7,7 @@ $foo = "bar";
 <html>
   <head>
     <title>PHP Delimiters</title>
+    <h1>My title</>
   </head>
   <body>
     <h1><?php
