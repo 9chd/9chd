@@ -22,7 +22,6 @@
          echo "<br>";
          while($row = $result->fetch_assoc()) 
             {
-               echo "Datestamp: " . $row["datestamp"]. " - Temperature: " . $row["temperature"]. " - Humidity: " . $row["humidity"]. "<br>";
                echo $row["datestamp"], $row["temperature"], $row["humidity"];
                echo "<br>";
             }
