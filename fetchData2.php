@@ -34,7 +34,5 @@
    $conn->close();
 
    // Works to here
-   
-readfile('chart.html')
- 
+
 ?>
