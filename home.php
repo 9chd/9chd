@@ -7,12 +7,9 @@
 	you wrap the javascript in a html document and use the readfile function.
 	*/
   	readfile('header.html');
-	</php
-		include('fetchData2.php');
-	?>
-	<html>	
-		readfile('chart.html');
-	</html>
+	readfile('chart.html');
+
+	include('fetchData2.php');
 
   	
 ?>
