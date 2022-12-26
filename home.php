@@ -10,7 +10,9 @@
 	</php
 		include('fetchData2.php');
 	?>
-	readfile('chart.html');
+	<html>	
+		readfile('chart.html');
+	</html>
 
   	
 ?>
